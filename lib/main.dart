@@ -60,16 +60,16 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.black,
       ),
       body:
-
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             height: 100,
             width: 500,
             color: Colors.grey,
             child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
@@ -200,7 +200,9 @@ class _MyHomePageState extends State<MyHomePage> {
             )
             ]
         ],
-      ),
+      )
+        )
+
 
 
     );
