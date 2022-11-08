@@ -1,7 +1,6 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-
+import 'package:first_app/Second_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -12,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       home: MyHomePage(),
     );
   }
@@ -148,6 +148,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       })
                 ],
               )),
+
+
+
+
           TextButton(              // calculate button
             child: Text(
                 "Calculate"),
@@ -167,38 +171,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
             ),
 
-            onPressed: BMI,
+              onPressed: () {
+                Navigator.push(context,MaterialPageRoute(builder: (BuildContext) {return SecondPage(bmi:bmi,);} ),);
+                  },
           ),
           SizedBox(height: 15),
-          Text(
-              bmi == null ? "Enter Value" : "Your BMI is: ${bmi.toStringAsFixed(2)}",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30,
-                fontWeight: FontWeight.w500,
-              )),
-          if (18.5 < bmi ) ...[
-            if (bmi< 24.9) ...[
-            Text("You are healthy.",
-            style: TextStyle(
-              color: Colors.green[900],
-              fontSize: 40
-            ),)
-          ]],
-          if (18.5 >bmi)...[
-            Text("You are underweight.",
-            style: TextStyle(
-              color: Colors.red,
-              fontSize:40
-            ),)
-          ],
-          if (bmi>24.9) ...[
-            Text("You are overweight.",
-            style:TextStyle(
-                color: Colors.red,
-            fontSize:40)
-            )
-            ]
+
+
         ],
       )
         )
