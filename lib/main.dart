@@ -47,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     });
 
+
   }
 
   @override
@@ -171,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             ),
 
-              onPressed: () {
+              onPressed: () {BMI();
                 Navigator.push(context,MaterialPageRoute(builder: (BuildContext) {return SecondPage(bmi:bmi,);} ),);
                   },
           ),

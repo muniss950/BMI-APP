@@ -19,7 +19,7 @@ class SecondPage extends StatelessWidget{
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                      bmi == null ? "Enter Value" : "Your BMI is: ${bmi}",
+                      bmi == null ? "Enter Value" : "Your BMI is: ${bmi.toStringAsFixed(2)}",
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 30,
