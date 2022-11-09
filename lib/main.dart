@@ -80,12 +80,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: () {},
                     child: Text(
                       'Enter your weight in kgs:  ',
-                      style: TextStyle(fontSize: 20, color: Colors.black),
+                      style: TextStyle(fontSize: 18, color: Colors.black),
                     ),
                   ),
                   ElevatedButton(   // for decrement in mass
                     child:
-                    Text("-".toUpperCase(), style: TextStyle(fontSize: 25)),
+                    Text("-".toUpperCase(), style: TextStyle(fontSize: 20)),
                     style: ButtonStyle(
                         padding: MaterialStateProperty.all<EdgeInsets>(
                             EdgeInsets.all(15)),
@@ -96,15 +96,15 @@ class _MyHomePageState extends State<MyHomePage> {
                         shape:
                         MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(18.0),
+                                borderRadius: BorderRadius.circular(15.0),
                                 side: BorderSide(color: Colors.black)))),
                     onPressed: minus,
                   ),
                   Text('$weight',
-                      style: TextStyle(fontSize: 60.0, color: Colors.black)),
+                      style: TextStyle(fontSize: 20.0, color: Colors.black)),
                   ElevatedButton(    //for increment in mass
                     child:
-                    Text("+".toUpperCase(), style: TextStyle(fontSize: 25)),
+                    Text("+".toUpperCase(), style: TextStyle(fontSize: 20)),
                     style: ButtonStyle(
                         padding: MaterialStateProperty.all<EdgeInsets>(
                             EdgeInsets.all(15)),
@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         shape:
                         MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(18.0),
+                                borderRadius: BorderRadius.circular(15.0),
                                 side: BorderSide(color: Colors.black)))),
                     onPressed: add,
                   )
